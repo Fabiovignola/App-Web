@@ -1,0 +1,41 @@
+{
+    "items": [{
+            "nombre": "Club Italo",
+            "ciudad": "barinas",
+            "jugadores": 25,
+            "Photo": "",
+            "categoria": "liga 1"
+        },
+
+        {
+            "nombre": "Barinitas",
+            "ciudad": "barinas",
+            "jugadores": 20,
+            "Photo": "",
+            "categoria": "liga 1"
+        },
+
+        {
+            "nombre": "Palacio Fajardo",
+            "ciudad": "barinas",
+            "jugadores": 20,
+            "Photo": "",
+            "categoria": "liga 1"
+        },
+
+        {
+            "nombre": "Club Español",
+            "ciudad": "barinas",
+            "jugadores": 21,
+            "Photo": "",
+            "categoria": "liga 1"
+        },
+
+        {
+            "nombre": "Club Arabe",
+            "ciudad": "barinas",
+            "jugadores": 18,
+            "Photo": "",
+            "categoria": "liga 1"
+        }]
+}
