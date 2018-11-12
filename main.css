@@ -1,4 +1,63 @@
-/*
-button {
-    margin: 100px;
-}*/
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#home {
+    height: 100vh;
+    background-color: black;
+}
+#games {
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
+#team {
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
+#fecha {
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
+#ubication {
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
+#redparti {
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
+#greenparti {
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
+#blueparti {
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
+#toparti {
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
+body {
+    background-color: black;
+}
+button,a {
+    align-content: center;
+}
+.btn-block {
+    font-size: 20px;
+}
+h3 {
+    color: white;
+    font-size: 12px;
+}

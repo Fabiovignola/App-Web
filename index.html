@@ -8,12 +8,63 @@
 </head>
 
 <body>
-    <div>
-        <button type="button" class="btn btn-primary btn-lg btn-block" onClick=" window.location.href='games.html' ">Games</button>
-        <button type="button" class="btn btn-secondary btn-lg btn-block" onClick=" window.location.href='ubication.html' ">Ubication</button>
-        <button type="button" class="btn btn-third btn-lg btn-block">Results</button>
+    <div id="container">
+        <!--        <img class="logo" src="ss.png" alt="kids playing"><h5>League Soccer Barinas</h5>-->
+        <div id="home">
+            <button type="button" class="btn btn-primary btn-lg btn-block" @Click="hidePage">Games</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" onClick=" window.location.href='ubication.html' ">Ubication</button>
+            <button type="button" class="btn btn-third btn-lg btn-block">Results</button>
+        </div>
+        <div id="games">
+            <button type="button" class="btn btn-primary btn-lg btn-block" onClick=" window.location.href='Team.html' ">Team</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" onClick=" window.location.href='games.html' ">Fecha</button>
+            <button type="button" @Click=" window.location.href='index.html' "><img class="logo" src="ss.png"></button>
+        </div>
+        <div id="team">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Red</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" onClick=" window.location.href='games.html' ">Blue</button>
+            <button type="button" class="btn btn-third btn-lg btn-block">Green</button>
+        </div>
+        <div id="toparti">
+            <div>
+                <li>
+                    todos los partidos red
+                </li>
+            </div>
+            <div>
+                <li>
+                    todos los partidos blue
+                </li>
+            </div>
+            <div>
+                <li>
+                    todos los partidos green
+                </li>
+            </div>
+        </div>
+        <div id="fecha">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Fecha 1</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Fecha 2</button>
+            <button type="button" class="btn btn-third btn-lg btn-block">Fecha 3</button>
+        </div>
+        <div id="redparti">
+            red
+            maps google
+        </div>
+        <div id="blueparti">
+            blue
+            maps google
+        </div>
+        <div id="greenparti">
+            green
+            maps google
+        </div>
+        <div id="ubication">
+            <button type="button" class="btn btn-primary btn-lg btn-block" onClick=" window.location.href='games.html' ">stadium red</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block">stadium blue</button>
+            <button type="button" class="btn btn-third btn-lg btn-block">stadium green</button>
+        </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="main.js"></script>
