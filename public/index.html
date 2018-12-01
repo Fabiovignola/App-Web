@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Liga Barinas">
+    <meta name="application-name" content="Liga Barinas">
+    <link rel="apple-touch-icon" href="ss4.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="home">
+            <h4>Soccer League Barinas</h4>
+            <img class="" src="ss5.png">
+            <button type="button" class="btn btn-primary btn-lg btn-block" @Click="hidePage">Games</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" @Click="hideUbi">Locations</button>
+            <button type="button" class="btn btn-success btn-lg btn-block" @Click="login">Login</button>
+        </div>
+        <div id="games">
+            <h4>Soccer League Barinas</h4>
+            <img class="" src="ss5.png">
+            <button type="button" class="menu" onClick=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" @Click="hideTeam">Team</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" @Click="hideFecha">Match</button>
+            <button type="button" class="menu" onClick=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
+        </div>
+        <div id="team">
+            <h4>Soccer League Barinas</h4>
+            <img class="" src="ss5.png">
+            <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
+            <button type="button" v-for="(game,index) in nTeam" class="btn btn-primary btn-lg btn-block" :data-id="index" @Click="hideInfo">{{game.nombre}}</button>
+            <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
+        </div>
+        <div id="informa">
+            <h4>Soccer League Barinas</h4>
+            <img class="" src="ss5.png">
+            <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
+            <h5>Information</h5>
+            <div id="lista" v-for="(game,index) in gamesOne" :data-id="index">
+                <li><a>Partidos</a> {{game.E1}} {{game.Hora}}</li>
+                <li><a>Partidos</a> {{game.E2}} {{game.Hora}}</li>
+            </div>
+            <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
+        </div>
+        <div id="fecha">
+            <h4>Soccer League Barinas</h4>
+            <img class="" src="ss5.png">
+            <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
+            <button type="button" v-for="(game,index) in games" class="btn btn-primary btn-lg btn-block" @Click="hidePart" :data-id="index">Day {{index+1}}</button>
+            <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
+        </div>
+        <div id="dateone">
+            <h4>Soccer League Barinas</h4>
+            <img class="" src="ss5.png">
+            <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
+            <h5>MATCH</h5>
+            <div id="lista" v-for="game in gamesOne">
+                <ul>{{game.E1}}<a> VS </a>{{game.E2}}</ul>
+                <li :href="ubicacion.name"><a>Stadium </a> {{game.local}}</li>
+                <li><a>Hora</a> {{game.Hora}}</li>
+            </div>
+            <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
+        </div>
+        <div id="ubication">
+            <h4>Soccer League Barinas</h4>
+            <img class="" src="ss5.png">
+            <button type="button" class="menu" onClick=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
+            <button type="button" v-for="(game,index) in uOne" id="caro" class="btn btn-primary btn-lg btn-block" @Click="hideCaro" :data-id="index">{{game.name}}</button>
+            <button type="button" class="menu" onClick=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
+        </div>
+        <div id="redparti">
+            <h4>Soccer League Barinas</h4>
+            <img class="" src="ss5.png">
+            <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
+            <div id="grid">
+                <h5>{{ubicacion.name}}</h5>
+                <iframe id="fram" :src="ubicacion.URL" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
+        </div>
+        <div id="loginpage">
+            <div id="cont">
+                <div id="chatUl">
+
+                </div>
+                <input id="mensaje">
+                <button type="button" id="btnEnviar" @click="sendMess">Enviar</button>
+            <button type="button" id="log" class="btn btn-primary btn-lg btn-block" @Click="logout">Log Out</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCCasyq5zArddUnNy-8GgHAmEokAxKkuSM",
+            authDomain: "liga-de-futbol-barinas.firebaseapp.com",
+            databaseURL: "https://liga-de-futbol-barinas.firebaseio.com",
+            projectId: "liga-de-futbol-barinas",
+            storageBucket: "liga-de-futbol-barinas.appspot.com",
+            messagingSenderId: "290244490519"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="scripts/code.js"></script>
+</body>
+
+</html>

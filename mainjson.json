@@ -1,41 +1,177 @@
 {
-    "teams": [{
-            "nombre": "Club Italo",
-            "ciudad": "barinas",
-            "jugadores": 25,
-            "Photo": "",
-            "categoria": "liga 1"
-        },
-
+  "teams": [
+    {
+      "nombre": "Club Italo",
+      "ciudad": "barinas",
+      "jugadores": 25,
+      "Photo": "",
+      "categoria": "liga 1"
+    },
+    {
+      "nombre": "Barinitas",
+      "ciudad": "barinas",
+      "jugadores": 20,
+      "Photo": "",
+      "categoria": "liga 1"
+    },
+    {
+      "nombre": "Palacio Fajardo",
+      "ciudad": "barinas",
+      "jugadores": 20,
+      "Photo": "",
+      "categoria": "liga 1"
+    },
+    {
+      "nombre": "Club Español",
+      "ciudad": "barinas",
+      "jugadores": 21,
+      "Photo": "",
+      "categoria": "liga 1"
+    },
+    {
+      "nombre": "Club Portugues",
+      "ciudad": "barinas",
+      "jugadores": 18,
+      "Photo": "",
+      "categoria": "liga 1"
+    },
+    {
+      "nombre": "Club Arabe",
+      "ciudad": "barinas",
+      "jugadores": 18,
+      "Photo": "",
+      "categoria": "liga 1"
+    }
+  ],
+  "games": [
+    {
+      "Fecha": "01-01-2019",
+      "partidos": [
         {
-            "nombre": "Barinitas",
-            "ciudad": "barinas",
-            "jugadores": 20,
-            "Photo": "",
-            "categoria": "liga 1"
+          "Hora": "9:00am",
+          "E1": "Club Italo",
+          "E2": "Barinitas",
+          "local": "Estadio la Carolina"
         },
-
         {
-            "nombre": "Palacio Fajardo",
-            "ciudad": "barinas",
-            "jugadores": 20,
-            "Photo": "",
-            "categoria": "liga 1"
+          "Hora": "11:00am",
+          "E1": "Palacio Fajardo",
+          "E2": "Club Español",
+          "local": "Estadio la Municipal"
         },
-
         {
-            "nombre": "Club Español",
-            "ciudad": "barinas",
-            "jugadores": 21,
-            "Photo": "",
-            "categoria": "liga 1"
+          "Hora": "1:00PM",
+          "E1": "Club Arabe",
+          "E2": "Club Portugues",
+          "local": "Estadio San Jose"
+        }
+      ]
+    },
+    {
+      "Fecha": "02-01-2019",
+      "partidos": [
+        {
+          "Hora": "9:00am",
+          "E1": "Club Italo",
+          "E2": "Palacio Fajardo",
+          "local": "Estadio la Carolina"
         },
-
         {
-            "nombre": "Club Arabe",
-            "ciudad": "barinas",
-            "jugadores": 18,
-            "Photo": "",
-            "categoria": "liga 1"
-        }]
+          "Hora": "11:00am",
+          "E1": "Club Arabe",
+          "E2": "Club Español",
+          "local": "Estadio la Municipal"
+        },
+        {
+          "Hora": "1:00PM",
+          "E1": "Club Portugues",
+          "E2": "Barinitas",
+          "local": "Estadio San Jose"
+        }
+      ]
+    },
+    {
+      "Fecha": "03-01-2019",
+      "partidos": [
+        {
+          "Hora": "9:00am",
+          "E1": "Club Italo",
+          "E2": "Club Español",
+          "local": "Estadio la Carolina"
+        },
+        {
+          "Hora": "11:00am",
+          "E1": "Club Arabe",
+          "E2": "Barinitas",
+          "local": "Estadio la Municipal"
+        },
+        {
+          "Hora": "1:00PM",
+          "E1": "Club Portugues",
+          "E2": "Palacio Fajardo",
+          "local": "Estadio San Jose"
+        }
+      ]
+    },
+    {
+      "Fecha": "04-01-2019",
+      "partidos": [
+        {
+          "Hora": "9:00am",
+          "E1": "Club Italo",
+          "E2": "Club Arabe",
+          "local": "Estadio la Carolina"
+        },
+        {
+          "Hora": "11:00am",
+          "E1": "Barinitas",
+          "E2": "Palacio Fajardo",
+          "local": "Estadio la Municipal"
+        },
+        {
+          "Hora": "1:00PM",
+          "E1": "Club Portugues",
+          "E2": "Club Español",
+          "local": "Estadio San Jose"
+        }
+      ]
+    },
+    {
+      "Fecha": "05-01-2019",
+      "partidos": [
+        {
+          "Hora": "9:00am",
+          "E1": "Club Italo",
+          "E2": "Club Portugues",
+          "local": "Estadio la Carolina"
+        },
+        {
+          "Hora": "11:00am",
+          "E1": "Club Arabe",
+          "E2": "Palacio Fajardo",
+          "local": "Estadio la Municipal"
+        },
+        {
+          "Hora": "1:00PM",
+          "E1": "Club Español",
+          "E2": "Barinitas",
+          "local": "Estadio San Jose"
+        }
+      ]
+    }
+  ],
+  "ubicacion": [
+    {
+      "name": "Estadio la Carolina",
+      "URL": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7889.550308072667!2d-70.2008162!3d8.6175727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7b584571db5109%3A0x8be3af8e40505c09!2sEstadio+Agustin+Tovar+%22La+Carolina%22!5e0!3m2!1ses-419!2ses!4v1542369025806"
+    },
+    {
+      "name": "Estadio la Municipal",
+      "URL": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7889.665296237905!2d-70.19500557839488!3d8.612060729935443!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb94d704715850e50!2sInternado+Judicial+Barinas!5e0!3m2!1ses-419!2ses!4v1542369122169"
+    },
+    {
+      "name": "Estadio San Jose",
+      "URL": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7889.575182308422!2d-70.24661219620869!3d8.61638064745704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x565aaf766b935489!2sClub+Deportivo+Espa%C3%B1ol!5e0!3m2!1ses-419!2ses!4v1542369094473"
+    }
+  ]
 }
