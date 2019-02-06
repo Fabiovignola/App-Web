@@ -20,29 +20,29 @@
     <div id="container">
         <div id="home">
             <h4>Soccer League Barinas</h4>
-            <img class="" src="ss5.png">
+            <img class="bandera" src="ss5.png">
             <button type="button" class="btn btn-primary btn-lg btn-block" @Click="hidePage">Games</button>
             <button type="button" class="btn btn-secondary btn-lg btn-block" @Click="hideUbi">Locations</button>
             <button type="button" class="btn btn-success btn-lg btn-block" @Click="login">Login</button>
         </div>
         <div id="games">
             <h4>Soccer League Barinas</h4>
-            <img class="" src="ss5.png">
+            <img class="bandera" src="ss5.png">
             <button type="button" class="menu" onClick=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
             <button type="button" class="btn btn-primary btn-lg btn-block" @Click="hideTeam">Team</button>
             <button type="button" class="btn btn-secondary btn-lg btn-block" @Click="hideFecha">Match</button>
-            <button type="button" class="menu" onClick=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
+            <button type="button"  class="menu" onClick=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
         </div>
         <div id="team">
             <h4>Soccer League Barinas</h4>
-            <img class="" src="ss5.png">
+            <img class="bandera" src="ss5.png">
             <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
             <button type="button" v-for="(game,index) in nTeam" class="btn btn-primary btn-lg btn-block" :data-id="index" @Click="hideInfo">{{game.nombre}}</button>
             <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
         </div>
         <div id="informa">
             <h4>Soccer League Barinas</h4>
-            <img class="" src="ss5.png">
+            <img class="bandera" src="ss5.png">
             <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
             <h5>Information</h5>
             <div id="lista" v-for="(game,index) in gamesOne" :data-id="index">
@@ -53,14 +53,14 @@
         </div>
         <div id="fecha">
             <h4>Soccer League Barinas</h4>
-            <img class="" src="ss5.png">
+            <img class="bandera" src="ss5.png">
             <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
             <button type="button" v-for="(game,index) in games" class="btn btn-primary btn-lg btn-block" @Click="hidePart" :data-id="index">Day {{index+1}}</button>
             <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
         </div>
         <div id="dateone">
             <h4>Soccer League Barinas</h4>
-            <img class="" src="ss5.png">
+            <img class="bandera" src="ss5.png">
             <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
             <h5>MATCH</h5>
             <div id="lista" v-for="game in gamesOne">
@@ -72,14 +72,14 @@
         </div>
         <div id="ubication">
             <h4>Soccer League Barinas</h4>
-            <img class="" src="ss5.png">
+            <img class="bandera" src="ss5.png">
             <button type="button" class="menu" onClick=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
             <button type="button" v-for="(game,index) in uOne" id="caro" class="btn btn-primary btn-lg btn-block" @Click="hideCaro" :data-id="index">{{game.name}}</button>
             <button type="button" class="menu" onClick=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
         </div>
         <div id="redparti">
             <h4>Soccer League Barinas</h4>
-            <img class="" src="ss5.png">
+            <img class="bandera" src="ss5.png">
             <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="fl.jpg"></button>
             <div id="grid">
                 <h5>{{ubicacion.name}}</h5>
@@ -95,6 +95,7 @@
                 <input id="mensaje">
                 <button type="button" id="btnEnviar" @click="sendMess">Enviar</button>
             <button type="button" id="log" class="btn btn-primary btn-lg btn-block" @Click="logout">Log Out</button>
+            <button type="button" class="menu" @Click=" window.location.href='index.html' "><img class="logo" src="d.png"></button>
             </div>
         </div>
     </div>
